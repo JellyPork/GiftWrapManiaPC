@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3101081863684236540}
   - component: {fileID: 2081237379637017253}
   - component: {fileID: 5507671657256117266}
+  - component: {fileID: 2653374574784545865}
   m_Layer: 7
   m_Name: MovableBox
   m_TagString: Untagged
@@ -33,7 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &63192663965371676
 MeshFilter:
@@ -133,3 +134,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2653374574784545865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328481237695893052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fccf1baddbd49624d85f335d0ca27212, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newBox: {fileID: 5107595912712648757, guid: 9a037b09b621f964cb40da26ec672621, type: 3}
