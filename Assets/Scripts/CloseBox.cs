@@ -19,13 +19,19 @@ public class CloseBox : MonoBehaviour
     
     private void OnTriggerEnter(Collider other) 
     {
+        string itemToSave = gameObject.name.ToString();
      if(other.gameObject.CompareTag("Closeable"))//si el objeto con el que interactua puede ser cerrado
      {
         GameObject parentObjectOfOther = other.gameObject.transform.root.gameObject;//saca el objeto padre 
         Destroy(gameObject);
         Destroy(parentObjectOfOther);//destruye los objetos
         Instantiate(newBox,parentObjectOfOther.transform.position,parentObjectOfOther.transform.rotation);
-        //crea el objeto dado en newBox en la ubicacion del objeto padre
+            //crea el objeto dado en newBox en la ubicacion del objeto padre
+            ClosedBoxItem newBoxScript = newBox.GetComponent<ClosedBoxItem>();
+            if(newBoxScript != null)
+            {
+                newBoxScript.setData(itemToSave);
+            }
      }
     } 
 }
