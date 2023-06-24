@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Closeable
+  - Wrapable
+  - Bowable
+  - YellowGift
+  - GreenGift
+  - BlueGift
+  - SilverGift
+  - SantaRedGift
+  - SnowflakeRedGift
   layers:
   - Default
   - TransparentFX
