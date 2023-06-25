@@ -5,11 +5,10 @@ using UnityEngine;
 public class ClosedBoxItem : MonoBehaviour
 {
     [SerializeField]
-    private string savedItem = "";
+    private string savedItem;
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame

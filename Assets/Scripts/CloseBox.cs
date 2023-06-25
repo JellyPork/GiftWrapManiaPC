@@ -6,6 +6,8 @@ public class CloseBox : MonoBehaviour
 {
     public GameObject newBox;// nuevo objeto que tomara el lugar del otro
     // Start is called before the first frame update
+
+    private string itemToSave;
     void Start()
     {
         
@@ -19,19 +21,22 @@ public class CloseBox : MonoBehaviour
     
     private void OnTriggerEnter(Collider other) 
     {
-        string itemToSave = gameObject.name.ToString();
+        
      if(other.gameObject.CompareTag("Closeable"))//si el objeto con el que interactua puede ser cerrado
      {
+        itemToSave = gameObject.name.ToString();
         GameObject parentObjectOfOther = other.gameObject.transform.root.gameObject;//saca el objeto padre 
         Destroy(gameObject);
         Destroy(parentObjectOfOther);//destruye los objetos
-        Instantiate(newBox,parentObjectOfOther.transform.position,parentObjectOfOther.transform.rotation);
-            //crea el objeto dado en newBox en la ubicacion del objeto padre
-            ClosedBoxItem newBoxScript = newBox.GetComponent<ClosedBoxItem>();
-            if(newBoxScript != null)
+            GameObject instantiatedBox = Instantiate(newBox, parentObjectOfOther.transform.position, parentObjectOfOther.transform.rotation);
+            ClosedBoxItem newBoxScript = instantiatedBox.GetComponent<ClosedBoxItem>();
+
+            if (newBoxScript != null)
             {
                 newBoxScript.setData(itemToSave);
             }
-     }
+
+
+        }
     } 
 }
