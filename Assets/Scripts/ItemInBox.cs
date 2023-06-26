@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClosedBoxItem : MonoBehaviour
+public class ItemInBox : MonoBehaviour
 {
     [SerializeField]
     private string savedItem;

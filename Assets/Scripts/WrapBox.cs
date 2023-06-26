@@ -24,8 +24,15 @@ public class WrapBox : MonoBehaviour
         GameObject parentObjectOfOther = other.gameObject.transform.root.gameObject;//saca el objeto padre 
         Destroy(gameObject);
         Destroy(parentObjectOfOther);//destruye los objetos
-        Instantiate(newBox,parentObjectOfOther.transform.position,parentObjectOfOther.transform.rotation);
         //crea el objeto dado en newBox en la ubicacion del objeto padre
+         GameObject instantiatedBox = Instantiate(newBox, parentObjectOfOther.transform.position, parentObjectOfOther.transform.rotation);
+            ItemInBox newBoxItemScript = instantiatedBox.GetComponent<ItemInBox>();
+            ItemInBox oldBoxItemScript = parentObjectOfOther.GetComponent<ItemInBox>();//el objeto guardado en un script
+
+            if (newBoxItemScript != null)
+            {
+                newBoxItemScript.setData(oldBoxItemScript.getData()); //pasar el objeto guardado de uno al otro
+            }
     }
         
     }

@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 8466451952855843502}
   - component: {fileID: 3796050586949997097}
   - component: {fileID: 3796050586949997110}
+  - component: {fileID: 3379213227923051456}
   m_Layer: 7
   m_Name: GiftTreeSilver
   m_TagString: SilverGift
@@ -191,6 +192,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.38967043, y: 0.40866786, z: 0.38967043}
   m_Center: {x: 0.00014873596, y: 0.2044085, z: 0.000000029802326}
+--- !u!114 &3379213227923051456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4066519791099998053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2e5d6fc5bdc6ca41a5c45d9be62f3c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  savedItem: 
 --- !u!1 &6609744959806725503
 GameObject:
   m_ObjectHideFlags: 0

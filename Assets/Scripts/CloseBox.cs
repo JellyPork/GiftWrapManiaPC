@@ -29,7 +29,7 @@ public class CloseBox : MonoBehaviour
         Destroy(gameObject);
         Destroy(parentObjectOfOther);//destruye los objetos
             GameObject instantiatedBox = Instantiate(newBox, parentObjectOfOther.transform.position, parentObjectOfOther.transform.rotation);
-            ClosedBoxItem newBoxScript = instantiatedBox.GetComponent<ClosedBoxItem>();
+            ItemInBox newBoxScript = instantiatedBox.GetComponent<ItemInBox>();
 
             if (newBoxScript != null)
             {
