@@ -23,19 +23,19 @@ public class BowBox : MonoBehaviour
     GameObject parentObjectOfOther = other.gameObject.transform.root.gameObject; //saca el objeto padre   
     if(other.gameObject.CompareTag("Bowable") && parentObjectOfOther.gameObject.CompareTag(GiftBoxAllowedForBow.tag))//&& Object.ReferenceEquals(parentObjectOfOther,giftBoxAllowedForBow))
     {   //si tiene el tag bowable el objeto y el objeto con el que contacto es un tipo de regalo que puede tener el moño.
-            
+       
+        //crea el objeto dado en newBox en la ubicacion del objeto padre
+        GameObject instantiatedBox = Instantiate(newBox, Vector3.up + parentObjectOfOther.transform.position, parentObjectOfOther.transform.rotation);
+        ItemInBox newBoxItemScript = instantiatedBox.GetComponent<ItemInBox>();
+        ItemInBox oldBoxItemScript = parentObjectOfOther.GetComponent<ItemInBox>();//el objeto guardado en un script
+        //pasarselo a el otro.
+
+        if (newBoxItemScript != null)
+        {
+            newBoxItemScript.setData(oldBoxItemScript.getData()); //pasar el objeto guardado de uno al otro
+        }
         Destroy(gameObject);
         Destroy(parentObjectOfOther);//destruye los objetos
-        //crea el objeto dado en newBox en la ubicacion del objeto padre
-            GameObject instantiatedBox = Instantiate(newBox, Vector3.up + parentObjectOfOther.transform.position, parentObjectOfOther.transform.rotation);
-            ItemInBox newBoxItemScript = instantiatedBox.GetComponent<ItemInBox>();
-            ItemInBox oldBoxItemScript = parentObjectOfOther.GetComponent<ItemInBox>();//el objeto guardado en un script
-            //pasarselo a el otro.
-
-            if (newBoxItemScript != null)
-            {
-                newBoxItemScript.setData(oldBoxItemScript.getData()); //pasar el objeto guardado de uno al otro
-            }
     } 
     }
 }

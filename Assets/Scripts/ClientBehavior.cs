@@ -26,7 +26,7 @@ public class ClientBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    transform.Translate(Vector3.forward * movementSpeed *Time.deltaTime);//se mueve hacia adelante el enemgio   
+     gameObject.transform.root.gameObject.transform.Translate(Vector3.forward * movementSpeed *Time.deltaTime);//se mueve hacia adelante el enemgio   
     }
 
     public GameObject GetDesiredGift()//para obtener el regalo que quiere 

@@ -73,7 +73,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GiftBoxAllowedForBow: {fileID: 1124568672691552971, guid: b5b79309ab86a76409b2bb0992c03138, type: 3}
-  newBox: {fileID: 5551685770911002782, guid: 8dc70b6750c4bf34f9505bdaa828a749, type: 3}
+  newBox: {fileID: 6517636785581490360, guid: 8dc70b6750c4bf34f9505bdaa828a749, type: 3}
 --- !u!54 &1364603970533081092
 Rigidbody:
   m_ObjectHideFlags: 0

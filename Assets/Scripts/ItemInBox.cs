@@ -5,7 +5,7 @@ using UnityEngine;
 public class ItemInBox : MonoBehaviour
 {
     [SerializeField]
-    private string savedItem;
+    public string savedItem;
     // Start is called before the first frame update
     void Start()
     {

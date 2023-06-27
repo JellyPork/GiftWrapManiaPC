@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GiftBoxAllowedForBow: {fileID: 2114576811892910302, guid: 2b4856edf0635744fb243ec57f119f3f, type: 3}
-  newBox: {fileID: 1945927224295605767, guid: 594e27457ef27354ab2e2373581151b0, type: 3}
+  newBox: {fileID: 4944104438043371675, guid: 594e27457ef27354ab2e2373581151b0, type: 3}
 --- !u!114 &2143114452801612557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GiftBoxAllowedForBow: {fileID: 4087827160255107308, guid: ba8666257e304324d921beb0596e1f24, type: 3}
-  newBox: {fileID: 114453143058415159, guid: 8b3d2f2b5ec30dd448ffe5c9f00f963a, type: 3}
+  newBox: {fileID: 5703332552870912657, guid: 8b3d2f2b5ec30dd448ffe5c9f00f963a, type: 3}
 --- !u!1 &5821918179225121340
 GameObject:
   m_ObjectHideFlags: 0

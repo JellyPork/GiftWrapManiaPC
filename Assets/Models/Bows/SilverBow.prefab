@@ -287,4 +287,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GiftBoxAllowedForBow: {fileID: 4066519791099998053, guid: 7b51d4675d81587478f66ef2fde87fea, type: 3}
-  newBox: {fileID: 18426647812527564, guid: afafb8363ccba82429c1ae5d0f0c33fc, type: 3}
+  newBox: {fileID: 5722060022889731232, guid: afafb8363ccba82429c1ae5d0f0c33fc, type: 3}

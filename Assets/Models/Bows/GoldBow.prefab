@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GiftBoxAllowedForBow: {fileID: 9037619952696905797, guid: 3e63a182614f6684084cdf61f721171e, type: 3}
-  newBox: {fileID: 5889861251537528744, guid: ffc449d93279dc34387de8a5f9ba0f01, type: 3}
+  newBox: {fileID: 5269227986966932035, guid: ffc449d93279dc34387de8a5f9ba0f01, type: 3}
 --- !u!1 &4836656222077232107
 GameObject:
   m_ObjectHideFlags: 0
