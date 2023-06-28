@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClientBehavior : MonoBehaviour
+public class ClientBehavior: MonoBehaviour
 {
-    public float movementSpeed;
     [Header("Could Want")]
     [SerializeField]
     private GameObject[] gifts; //regalos que podria desear
@@ -26,7 +25,6 @@ public class ClientBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     gameObject.transform.root.gameObject.transform.Translate(Vector3.forward * movementSpeed *Time.deltaTime);//se mueve hacia adelante el enemgio   
     }
 
     public GameObject GetDesiredGift()//para obtener el regalo que quiere 

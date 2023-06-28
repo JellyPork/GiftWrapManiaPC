@@ -14,6 +14,10 @@ TagManager:
   - SantaRedGift
   - SnowflakeRedGift
   - Client
+  - waypoint
+  - sittingpoint
+  - stealingpoint
+  - pickuppoint
   layers:
   - Default
   - TransparentFX
