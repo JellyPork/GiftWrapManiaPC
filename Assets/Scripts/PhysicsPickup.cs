@@ -27,7 +27,7 @@ public class PhysicsPickup : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             if (currentObj)
             {
@@ -44,7 +44,7 @@ public class PhysicsPickup : MonoBehaviour
             }
 
         }
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             if (currentObj)
             {
